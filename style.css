@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+    background-color: #fffaf0;
+}
+
+.slider-title {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 64px;
+    text-align: center;
+    padding: 25px 0;
+}
+
+.image-selector-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.image-selector {
+    padding: 0 10px;
+}
+
+.image-selector-circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #d3d3d3;
+}
+
+.image-selector:hover > .image-selector-circle {
+    background-color: #808080;
+}
+
+img {
+    width: 800px;
+    position: absolute;
+    left: calc(50% - 400px);
+    top: 80px;   
+}
+
+.selected-hover-image {
+    display: none;
+}
+
+.image-selector:hover > .selected-hover-image {
+    width: 800px;
+    position: absolute;
+    left: calc(50% - 400px);
+    top: 50px;
+    display: inline-block;
+}
